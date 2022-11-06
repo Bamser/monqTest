@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./light-mode.css" id="theme">
+    <title>MonqTest</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="title">Preferences</h1>
+        <p class="text">On this page you can configure the main system parameters available for customization</p>
+        <form class="form" action="#">
+            <div class="monq__row">
+                <span>Company Title</span>
+                <input class="monq__window" type="text" placeholder="Default">
+            </div>
+            <div class="monq__row monq__row--select">
+                <span>First Day</span>
+                <select class="monq__window">
+                    <option>Monday</option>
+                    <option>Sunday</option>
+                    <option>System</option>
+                </select>
+            </div>
+            <div class="monq__row monq__row--select">
+                <span>Container Width</span>
+                <select class="monq__window">
+                    <option>Fixed</option>
+                    <option>Fixed</option>
+                    <option>Fixed</option>
+                </select>
+            </div>
+            <div class="monq__row monq__row--select">
+                <span>Homepage</span>
+                <select class="monq__window">
+                    <option>Starred Projects</option>
+                    <option>Starred Projects</option>
+                    <option>Starred Projects</option>
+                </select>
+            </div>
+            <div class="monq__row">
+                <span>Indent Size</span>
+                <input class="monq__window" type="text" placeholder="Default">
+            </div>
+            <div class="monq__row monq__code">
+                <label for="#">
+                    <span>Personal Code</span>
+                    <input class="monq__window monq__window--small small-left" type="text"> -
+                    <input class="monq__window monq__window--small small-left small-right" type="text"> -
+                    <input class="monq__window monq__window--small small-right" type="text">
+                </label>
+            </div>
+            <div class="monq__row monq__theme">
+                <div class="monk__theme--light">
+                    <span>Theme</span>
+                    <label for="radio-1">
+                        <input id="radio-1" type="radio" name="theme" value="1" checked>
+                        Light</label>
+                </div>
+                <div class="monq__theme--dark">
+                    <span></span>
+                    <label>
+                        <input id="radio-2" type="radio" name="theme" value="2">
+                        Dark</label>
+                </div>
+            </div>
+            <div class="monq__buttons">
+                <button id="switchThemeDark" class="monq__button--apply">Apply and Save</button>
+                <button class="monq__button--cancel">Cancel </button>
+            </div>
+        </form>
+
+        <footer class="footer">
+            <span>2020-2022</span>
+            <a href="#">Terms of Service</a>
+            <span>and</span>
+            <a href="#">Conditions</a>
+        </footer>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
